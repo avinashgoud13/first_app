@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  # before show, edit, update and destroy action, set_user action is invoked. From Param the user is find.
+  before_action :set_user, only: [:show, :edit, :update, :destroy] 
 
   # GET /users
   # GET /users.json
